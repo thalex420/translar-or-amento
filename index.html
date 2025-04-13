@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translar - Orçamento Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="translar_logo.png" alt="Logo Translar" class="logo">
+        <h1>Orçamento de Mudança Inteligente</h1>
+    </header>
+    <main>
+        <form id="form-orcamento">
+            <h2>Serviços Padrões</h2>
+            <label>Tipo de caminhão:
+                <select name="caminhao">
+                    <option value="grande">Grande</option>
+                    <option value="medio">Médio</option>
+                    <option value="pequeno">Pequeno</option>
+                </select>
+            </label><br>
+            <label>Nº de ajudantes:
+                <input type="number" name="ajudantes" min="1" value="3">
+            </label><br>
+            <label>Qtd. de guarda-roupas:
+                <input type="number" name="guarda_roupas" min="0" value="0">
+            </label><br>
+            <label>Tem painel de TV?
+                <input type="checkbox" name="painel_tv">
+            </label><br>
+            <label>Tem cama?
+                <input type="checkbox" name="cama">
+            </label><br>
+
+            <h2>Serviços Complementares</h2>
+            <label><input type="checkbox" name="limpeza"> Limpeza</label><br>
+            <label><input type="checkbox" name="reparos"> Reparos e Pintura</label><br>
+
+            <button type="submit">Calcular Orçamento</button>
+        </form>
+        <section id="resultado"></section>
+        <button id="whatsappBtn" style="display:none;">Enviar pelo WhatsApp</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
